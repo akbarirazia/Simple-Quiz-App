@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+.container {
+  width: 50%;
+  height: auto;
+  max-height: 80%;
+  background-color: beige;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.answer-btn {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px;
+  margin: 8% 0;
+}
+.btn {
+  padding: 5px 10px;
+  margin: 5px;
+  outline: none;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: darkgray;
+}
+
+.btn.correct {
+  background-color: chartreuse;
+}
+.btn.wrong {
+  background-color: brown;
+}
+.hidden {
+  display: none;
+}
+.btn-start,
+.btn-next {
+  font-size: larger;
+  padding: 5px 20px;
+}
